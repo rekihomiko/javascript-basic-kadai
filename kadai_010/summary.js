@@ -1,0 +1,22 @@
+$(function(){
+  //cange-colorボタンがクリックされた場合
+  $('#change-color').on('click',function(){
+    //テキストの色を赤にする
+    $('#target').css('color','red');
+  });
+  //change-textボタンがクリックされた場合
+  $('#change-text').on('click',function(){
+    //テキストの内容を変更する
+    $('#target').text('Hello!');
+  });
+  //fade-outボタンがクリックされた場合
+  $('#fade-out').on('click',function(){
+    //テキストをフェードアウトさせる
+    $('#target').fadeOut();
+  });
+  //fade-inボタンがクリックされた場合
+  $('#fade-in').on('click',function(){
+    //テキストをフェードインさせる
+    $('#target').fadeIn();
+  });
+});
